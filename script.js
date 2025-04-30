@@ -1,4 +1,4 @@
 function magicButton() {
-    alert("Je klikte op de magische knop!");
+    alert("FORGED JUST FOR US... FOREVER");
   }
   
