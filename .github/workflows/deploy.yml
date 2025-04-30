@@ -1,0 +1,30 @@
+# naam voor de stap
+name: Deploy to GitHub Pages
+# bepalen wanneer de pipeline runt. Zeggen dat stappen overlopen worden eenmaal gepushed naar main branch. 
+on:
+  push:
+    branches:
+      - main
+# op knopje duwen om te deployen    
+  workflow_dispatch:
+
+permissions:
+  contents: write
+# delen van de pipeline
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+# definieer de stappen
+    steps:
+        # eigen repo binnenhalen
+      - name: Checkout repository
+      # deze haalt github repo binnen
+        uses: actions/checkout@v3
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+            # nodig om de juiste permissions te krijgen (toegang)
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # alle files zitten in de root dus puntje 
+          publish_dir: .
