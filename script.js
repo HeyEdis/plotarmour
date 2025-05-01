@@ -1,4 +1,4 @@
 function magicButton() {
-    alert("FORGED JUST FOR US... FOREVER");
+    alert("BUILD JUST FOR US... FOREVER");
   }
   
