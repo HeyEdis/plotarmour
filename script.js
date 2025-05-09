@@ -1,4 +1,4 @@
 function magicButton() {
-    alert("BUILD JUST FOR US... FOREVER");
+    alert("PRE ORDER HAS BEEN SUBMITTED!\n\n\nAWAIT FURTHER INSRUCTIONS");
   }
   

@@ -13,7 +13,43 @@
   <main>
     <img src="./assets/OffWhiteTransparant.png" alt="rebirth" style="height: 60%;width: 60%;">
   </br>
-    <button onclick="magicButton()">PRESS</button>
+    <div class="infoClothing">
+        <h3>INFO</h3>
+        <p>
+          Price: € 25 <br>
+          Shipping: € 10 <br>
+        </p>
+      <form>
+        <label for="clothingSize">Size:</label>
+        <select id="clothingSize" name="clothingSize">
+          <option value="small">S</option>
+          <option value="medium">M</option>
+          <option value="large">L</option>
+          <option value="extralarge">XL</option>
+        </select> 
+      </form>
+    </div>
+    
+    <div class="form-container">
+      <h3>PRE-ORDER</h3>
+      <form action="" autocomplete="on">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="phonenumber">Phonenumber:</label>
+        <input type="tel" id="phonenumber" name="phonenumber"><br>
+        <label for="street">Streetname:</label>
+        <input type="text" id="street" name="street">
+        <label for="nr">nr:</label>
+        <input type="number" id="nr" name="nr"><br>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <button onclick="magicButton()" type="submit" value="Submit">SUBMIT</button>
+      </form>
+  </div>
   </main>
   <script src="script.js"></script>
 </body>
