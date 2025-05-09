@@ -59,3 +59,7 @@ body {
   margin-left: 3rem;
   align-content: start;
 }
+
+table tr td:first-of-type {
+  font-weight: bold;
+}
