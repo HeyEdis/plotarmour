@@ -33,4 +33,4 @@ jobs:
             # nodig om de juiste permissions te krijgen (toegang)
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # alle files zitten in de root dus puntje 
-          publish_dir: .
+          publish_dir: ./js
