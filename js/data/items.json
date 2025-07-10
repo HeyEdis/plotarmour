@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "category": "clothing",
+        "item": "tshirt",
+        "collection": "New horizons",
+        "description": "Blank white tshirt with screenprinted design.",
+        "price": 25,
+        "shipping": 5
+    }
+]
