@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+@tailwind utilities;
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+* {
+    box-sizing: border-box;
+    font-family: "Jost", "Sans-serif";
+}
