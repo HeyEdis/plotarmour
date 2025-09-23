@@ -17,6 +17,9 @@
 //     )
 // })
     
+    const handleClick = () => {
+        document.getElementById('preorderForm')?.scrollIntoView();
+    }
 
 
 </script>
@@ -34,55 +37,27 @@
     <img class="scale-90" src={img} alt="tshirt" />
 </div>
 
-<div class="flex-row margin-auto w-2xl p-4 rounded-md" >
-    <h3 class="font-bold text-1xl mt-24 mb-1">{ITEM_DATA[0].collection.toUpperCase()}</h3>
-    <p class="mb-10">{ITEM_DATA[0].description}</p>
+<div class="flex-row margin-auto w-2xl p-4 rounded-2xl border-1 border-gray-200 m-32 shadow-lg shadow-gray-50 " >
+    <h3 class="font-bold text-2xl mt-28 mb-1">{ITEM_DATA[0].collection.toUpperCase()}</h3>
+    <p class="mb-25 italic">{ITEM_DATA[0].description}</p>
 
     <table class="table-auto">
         <tbody>
             <tr>
-                <td class="font-bold">Price: </td>
-                <td> &euro; {price}</td>
+                <td class="font-bold pr-25">Price </td>
+                <td class="font-bold">Shipping </td>
             </tr>
             <tr>
-                <td class="font-bold">Shipping: </td>
-                <td> &euro; {shipping}</td>
+                <td class="text-4xl">&euro; {price}</td>
+                <td class="text-4xl">&euro; {shipping}</td>
             </tr>
         </tbody>
     </table>
+    <button class="rounded-lg bg-green-700 shadow-lg shadow-gray-220 p-2 text-white font-bold text-lg mt-68" onclick={handleClick} type='button'>PREORDER</button>
 </div>
 </div>
 
-<!-- <div class="max-w-sm w-full lg:max-w-full lg:flex">
-  <div class="h-128 lg:h-auto lg:w-128 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center " style="background-image: url('{img}') ;" title="plotting...">
-  </div>
-  <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-    <div class="mb-8">
-      <p class="text-sm text-gray-600 flex items-center">
-        {ITEM_DATA[0].collection}
-      </p>
-      <div class="text-gray-900 font-bold text-xl mb-2">Plot Armour Tee</div>
-      <p class="text-gray-700 text-base">{ITEM_DATA[0].description}</p>
-    </div>
-    <div class="flex items-center">
-      <table class="table-auto">
-        <tbody>
-            <tr>
-                <td class="font-bold">Price: </td>
-                <td> &euro; {price}</td>
-            </tr>
-            <tr>
-                <td class="font-bold">Shipping: </td>
-                <td> &euro; {shipping}</td>
-            </tr>
-        </tbody>
-    </table>
-    </div>
-  </div>
-</div>-->
-
-
-<div class="flex items-stretch justify-center border-1 border-gray-200 p-6 m-11 rounded-2xl w-auto bg-gradient-to-t from-slate-50 to-green-50">
+<div id="preorderForm" class="flex items-stretch justify-center border-1 border-gray-200 p-6 m-11 rounded-2xl w-auto bg-gradient-to-t from-slate-50 to-green-50">
     <div class="flex-row">
     <h3 class="font-bold text-4xl mb-5 ">PRE-ORDER</h3>
         <form action="" autocomplete="on">
