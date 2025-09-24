@@ -62,7 +62,7 @@
     <h3 class="font-bold text-4xl mb-5 ">PRE-ORDER</h3>
         <form action="" autocomplete="on">
             <label class="font-bold" for="clothingSize">Size:</label><br>
-            <select class="rounded-lg form-select mb-3 w-md h-10 focus:border-green-600 focus:border-2 focus:outline-none focus:ring-0" id="clothingSize" name="clothingSize">
+            <select class="rounded-lg form-select mb-3 w-md h-10 focus:border-green-600 focus:border-2 focus:outline-none focus:ring-0" id="clothingSize" value="" name="clothingSize">
                 {#each Object.entries(SIZES_DATA[0]) as [key, value] }
                     <option class="rounded-lg w-md h-10" value={key}>{value}</option>
                 {/each}
